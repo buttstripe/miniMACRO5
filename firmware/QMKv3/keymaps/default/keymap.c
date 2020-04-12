@@ -5,27 +5,27 @@
 void encoder_update_user(uint8_t index, bool clockwise) {
   if (index == 0) { /* First encoder*/
     if (clockwise) {
-      tap_code(KC_1);
+      tap_code(KC_F13);
     } else {
-      tap_code(KC_2);
+      tap_code(KC_F14);
     }
   } else if (index == 1) { /* Second encoder*/  
     if (clockwise) {
-      tap_code(KC_3);
+      tap_code(KC_F15);
     } else {
-      tap_code(KC_4);
+      tap_code(KC_F16);
     }
   } else if (index == 2) { /* Third encoder*/  
     if (clockwise) {
-      tap_code(KC_5);
+      tap_code(KC_F17);
     } else {
-      tap_code(KC_6);
+      tap_code(KC_F18);
     }
   } else if (index == 3) { /* Fourth encoder*/  
     if (clockwise) {
-      tap_code(KC_7);
+      tap_code(KC_F19);
     } else {
-      tap_code(KC_8);
+      tap_code(KC_F20);
     }
   } else if (index == 4) { /* Fifth encoder*/  
     if (clockwise) {
@@ -38,6 +38,6 @@ void encoder_update_user(uint8_t index, bool clockwise) {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = { //buttion closest to usb is first
   [_MAIN] = LAYOUT(
-     KC_A, KC_B, KC_C, KC_D, KC_E 
+     KC_F21, KC_F22, KC_F23, KC_F24, KC_MUTE 
   )
 };
